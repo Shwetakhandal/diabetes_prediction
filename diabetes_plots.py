@@ -12,7 +12,7 @@ from sklearn import tree
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.tree import export_graphviz
 from io import StringIO
-from IPython.display import Image  
+#from IPython.display import Image  
 
 
 # Define a function 'app()' which accepts 'census_df' as an input.
