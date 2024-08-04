@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier  
 from sklearn.model_selection import GridSearchCV  
 from sklearn import tree
-from sklearn.metrics import confusion_matrix, plot_confusion_matrix, classification_report
+from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.tree import export_graphviz
 from io import StringIO
 from IPython.display import Image  
@@ -52,12 +52,6 @@ def app(diabetes_df):
         dtree_clf.fit(X_train, y_train) 
         y_train_pred = dtree_clf.predict(X_train)
         y_test_pred = dtree_clf.predict(X_test)
-
-         
-        if st.checkbox("Plot confusion matrix"):
-            plt.figure(figsize = (10, 6))
-            plot_confusion_matrix(dtree_clf, X_train, y_train, values_format = 'd')
-            st.pyplot()
 
         if st.checkbox("Plot Decision Tree"):   
             # Export decision tree in dot format and store in 'dot_data' variable.
