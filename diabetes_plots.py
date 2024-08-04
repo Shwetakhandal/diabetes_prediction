@@ -15,10 +15,10 @@ from io import StringIO
 #from IPython.display import Image  
 
 
-# Define a function 'app()' which accepts 'census_df' as an input.
+# Define a function 'app()'
 def app(diabetes_df):
     warnings.filterwarnings('ignore')
-    st.set_option('deprecation.showPyplotGlobalUse', False)
+    #st.set_option('deprecation.showPyplotGlobalUse', False)
     st.title("Visualise the Diabetes Prediction Web app ")
 
     if st.checkbox("Show the correlation heatmap"):
