@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Define a function 'app()' which accepts 'census_df' as an input.
+# Define a function 'app()'
 def app(diabetes_df):
   # Set the title to the home page contents.
   st.title('Early Diabetes Predictoin Web App')  
